@@ -1,43 +1,29 @@
 @echo off
-echo Starting RoryK Self-Hosted MongoDB Database...
+echo RoryK Database Information
 echo.
-
-echo Checking if Docker is running...
-docker --version >nul 2>&1
-if %errorlevel% neq 0 (
-    echo ERROR: Docker is not installed or not running
-    echo Please install Docker Desktop and make sure it's running
-    pause
-    exit /b 1
-)
-
-echo Docker is available!
+echo ℹ️  This application now uses MongoDB Atlas (Cloud Database)
 echo.
-
-echo Starting MongoDB and Mongo Express containers...
-docker-compose up -d
-
-if %errorlevel% neq 0 (
-    echo ERROR: Failed to start database containers
-    pause
-    exit /b 1
-)
-
+echo 📊 Database: MongoDB Atlas
+echo 🌐 Cluster: roryk.ofpdpmr.mongodb.net
+echo 🔗 Connection: mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk
 echo.
-echo ✅ Database started successfully!
+echo ✅ No local database setup required!
 echo.
-echo 📊 MongoDB: mongodb://localhost:27017/roryk
-echo 🌐 Mongo Express Web UI: http://localhost:8081
-echo    Username: admin
-echo    Password: roryk-web-admin
+echo 🔐 Atlas Features:
+echo    - Automated backups and monitoring
+echo    - Built-in security and scaling
+echo    - No local installation needed
+echo    - 99.995%% uptime SLA
 echo.
-echo 🔐 Database Credentials:
-echo    App User: roryk_app
-echo    App Password: roryk-app-password-2024
+echo 🌐 Access Atlas Dashboard:
+echo    https://cloud.mongodb.com/
 echo.
 echo ⚡ Next steps:
-echo    1. Start the backend server: cd backend && npm start
-echo    2. Start the frontend: cd .. && npm start
+echo    1. Start the backend server: cd backend ^&^& npm start
+echo    2. Start the frontend: cd .. ^&^& npm start
+echo    3. Or use PM2: pm2-start.bat production
+echo.
+echo 📚 For migration details, see: MONGODB_ATLAS_MIGRATION.md
 echo.
 echo Press any key to continue...
 pause >nul

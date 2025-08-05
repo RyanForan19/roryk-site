@@ -34,8 +34,7 @@ if "%ENV%"=="production" (
 ) else if "%ENV%"=="development" (
     echo [%date% %time%] Starting services for development...
     
-    REM Start only backend and database for development
-    pm2 start ecosystem.config.js --only roryk-mongodb
+    REM Start only backend for development (MongoDB Atlas is used)
     pm2 start ecosystem.config.js --only roryk-backend --env development
     
     REM Start frontend in development mode separately
@@ -60,12 +59,12 @@ if "%ENV%"=="production" (
     echo Application URLs:
     echo   Frontend: http://localhost:3000
     echo   Backend: http://localhost:3001
-    echo   MongoDB: localhost:27017
+    echo   Database: MongoDB Atlas ^(Cloud^)
 ) else (
     echo Development URLs:
     echo   Frontend: http://localhost:3000 ^(React dev server^)
     echo   Backend: http://localhost:3001
-    echo   MongoDB: localhost:27017
+    echo   Database: MongoDB Atlas ^(Cloud^)
 )
 
 echo.

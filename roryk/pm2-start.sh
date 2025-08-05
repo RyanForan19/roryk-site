@@ -56,8 +56,7 @@ if [ "$ENV" = "production" ]; then
 elif [ "$ENV" = "development" ]; then
     log "Starting services for development..."
     
-    # Start only backend and database for development
-    pm2 start ecosystem.config.js --only roryk-mongodb
+    # Start only backend for development (MongoDB Atlas is used)
     pm2 start ecosystem.config.js --only roryk-backend --env development
     
     # Start frontend in development mode separately
@@ -81,12 +80,12 @@ if [ "$ENV" = "production" ]; then
     log "Application URLs:"
     log "  Frontend: http://localhost:3000"
     log "  Backend: http://localhost:3001"
-    log "  MongoDB: localhost:27017"
+    log "  Database: MongoDB Atlas (Cloud)"
 else
     log "Development URLs:"
     log "  Frontend: http://localhost:3000 (React dev server)"
     log "  Backend: http://localhost:3001"
-    log "  MongoDB: localhost:27017"
+    log "  Database: MongoDB Atlas (Cloud)"
 fi
 
 log ""
