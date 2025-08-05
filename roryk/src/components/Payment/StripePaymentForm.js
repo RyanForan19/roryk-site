@@ -63,7 +63,7 @@ const StripePaymentForm = ({ amount, onSuccess, onError, onCancel, onHeightChang
         checkAndUpdateHeight();
       });
     }
-  }, [stripe, elements, onHeightChange]);
+  }, [stripe, elements, onHeightChange, checkAndUpdateHeight]);
 
   const handleSubmit = async (event) => {
     event.preventDefault();

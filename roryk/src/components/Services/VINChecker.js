@@ -65,13 +65,6 @@ export default function VINChecker() {
     return vinString.replace(/(.{4})/g, '$1 ').trim();
   };
 
-  const getVINPosition = (position, description) => {
-    return {
-      position,
-      description,
-      value: result?.vin ? result.vin.charAt(position - 1) : ''
-    };
-  };
 
   const vinPositions = [
     { position: 1, description: 'World Manufacturer Identifier (WMI) - Country' },

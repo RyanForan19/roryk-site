@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { Link } from "react-router-dom";
 import { format } from "date-fns";
@@ -8,13 +8,7 @@ export default function Home() {
   const [recentTransactions, setRecentTransactions] = useState([]);
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (user) {
-      loadRecentTransactions();
-    }
-  }, [user]);
-
-  const loadRecentTransactions = () => {
+  const loadRecentTransactions = useCallback(() => {
     setLoading(true);
     try {
       const transactions = getUserTransactions(user.id);
@@ -25,7 +19,13 @@ export default function Home() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [user, getUserTransactions]);
+
+  useEffect(() => {
+    if (user) {
+      loadRecentTransactions();
+    }
+  }, [user, loadRecentTransactions]);
 
   const formatCurrency = (amount) => {
     return `€${amount.toFixed(2)}`;

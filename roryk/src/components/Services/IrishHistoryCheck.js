@@ -55,12 +55,6 @@ export default function IrishHistoryCheck() {
     }
   };
 
-  const formatCurrency = (amount) => {
-    return new Intl.NumberFormat('en-IE', {
-      style: 'currency',
-      currency: 'EUR'
-    }).format(amount);
-  };
 
   const getStatusColor = (status) => {
     switch (status) {

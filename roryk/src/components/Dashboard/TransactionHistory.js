@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -15,13 +15,7 @@ export default function TransactionHistory() {
   });
   const [loading, setLoading] = useState(true);
 
-  useEffect(() => {
-    if (user) {
-      loadData();
-    }
-  }, [user]);
-
-  const loadData = () => {
+  const loadData = useCallback(() => {
     setLoading(true);
     try {
       let userTransactions;
@@ -49,7 +43,13 @@ export default function TransactionHistory() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [user, getAllUsers, getUserTransactions]);
+
+  useEffect(() => {
+    if (user) {
+      loadData();
+    }
+  }, [user, loadData]);
 
   const getUsernameById = (userId) => {
     const foundUser = allUsers.find(u => u.id === userId);

@@ -70,24 +70,32 @@ check_prerequisites() {
 
 # Backup database (MongoDB Atlas)
 backup_database() {
-    log "Database backup with MongoDB Atlas..."
+    log "Creating database backup..."
     
-    # Check if mongodump is available for manual backup
+    # MongoDB Atlas provides automated backups, but we can try to create a manual backup
     if command -v mongodump &> /dev/null; then
-        log "Creating manual backup with mongodump..."
+        log "Attempting manual backup with mongodump..."
         mkdir -p "$BACKUP_DIR"
         BACKUP_FILE="$BACKUP_DIR/mongodb_atlas_backup_$(date +%Y%m%d_%H%M%S).gz"
         
-        if mongodump --uri="mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk" --archive --gzip > "$BACKUP_FILE" 2>/dev/null; then
-            success "Atlas backup created: $BACKUP_FILE"
+        # Use the MongoDB URI from environment or fallback to Atlas URI
+        MONGODB_URI="${MONGODB_URI:-mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk?retryWrites=true&w=majority}"
+        
+        if timeout 30 mongodump --uri="$MONGODB_URI" --archive="$BACKUP_FILE" --gzip 2>/dev/null; then
+            success "Manual backup created: $BACKUP_FILE"
         else
-            warning "Atlas backup failed, but continuing deployment..."
+            warning "Manual backup failed, but continuing deployment..."
+            warning "MongoDB Atlas provides automated backups - manual backup is optional"
         fi
     else
-        warning "mongodump not found. MongoDB Atlas provides automated backups."
-        warning "To create manual backups, install mongodb-database-tools and use:"
-        warning "mongodump --uri=\"mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk\""
+        log "mongodump not available - relying on MongoDB Atlas automated backups"
+        warning "For manual backups, install mongodb-database-tools:"
+        warning "  Ubuntu/Debian: sudo apt-get install mongodb-database-tools"
+        warning "  CentOS/RHEL: sudo yum install mongodb-database-tools"
+        warning "  macOS: brew install mongodb/brew/mongodb-database-tools"
     fi
+    
+    success "Database backup process completed"
 }
 
 # Install dependencies
@@ -167,12 +175,19 @@ deploy_backend() {
     
     cd ..
     
+    # Stop existing backend process if running
+    pm2 stop roryk-backend 2>/dev/null || true
+    pm2 delete roryk-backend 2>/dev/null || true
+    
     # Start backend with PM2
     if [ "$DEPLOY_ENV" = "production" ]; then
         pm2 start ecosystem.config.js --only roryk-backend --env production
     else
         pm2 start ecosystem.config.js --only roryk-backend --env development
     fi
+    
+    # Wait for backend to start
+    sleep 3
     
     pm2 save
     success "Backend deployed"
@@ -183,8 +198,16 @@ deploy_frontend() {
     log "Deploying frontend..."
     
     if [ "$DEPLOY_ENV" = "production" ]; then
+        # Stop existing frontend process if running
+        pm2 stop roryk-frontend 2>/dev/null || true
+        pm2 delete roryk-frontend 2>/dev/null || true
+        
         # Start frontend server with PM2
         pm2 start ecosystem.config.js --only roryk-frontend
+        
+        # Wait for frontend to start
+        sleep 3
+        
         success "Frontend deployed on port 3000"
     else
         log "Starting frontend in development mode..."
@@ -277,9 +300,14 @@ rollback() {
 stop() {
     log "Stopping services..."
     
-    # Stop all PM2 processes
-    pm2 stop all || true
-    pm2 delete all || true
+    # Stop specific PM2 processes
+    pm2 stop roryk-backend 2>/dev/null || true
+    pm2 stop roryk-frontend 2>/dev/null || true
+    pm2 delete roryk-backend 2>/dev/null || true
+    pm2 delete roryk-frontend 2>/dev/null || true
+    
+    # Clean up PM2 process list
+    pm2 save --force 2>/dev/null || true
     
     success "Services stopped"
 }

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../../context/AuthContext';
 import { useNavigate } from 'react-router-dom';
 import { format } from 'date-fns';
@@ -19,13 +19,7 @@ export default function UserProfile() {
   const [showChangePassword, setShowChangePassword] = useState(false);
   const [successMessage, setSuccessMessage] = useState('');
 
-  useEffect(() => {
-    if (user) {
-      loadUserData();
-    }
-  }, [user]);
-
-  const loadUserData = () => {
+  const loadUserData = useCallback(() => {
     setLoading(true);
     try {
       const userTransactions = getUserTransactions(user.id);
@@ -56,7 +50,13 @@ export default function UserProfile() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [user, getUserTransactions]);
+
+  useEffect(() => {
+    if (user) {
+      loadUserData();
+    }
+  }, [user, loadUserData]);
 
   const formatCurrency = (amount) => {
     return `€${amount.toFixed(2)}`;

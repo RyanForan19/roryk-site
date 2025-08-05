@@ -1,4 +1,4 @@
-import { createContext, useState, useContext, useEffect } from "react";
+import { createContext, useState, useContext, useEffect, useCallback } from "react";
 import { hashPassword, verifyPassword } from "../utils/encryption";
 import secureStorage from "../utils/storage";
 
@@ -7,6 +7,19 @@ const AuthContext = createContext();
 export const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
+
+  const refreshUserData = useCallback(() => {
+    try {
+      if (user && user.id) {
+        const freshUserData = secureStorage.getUserById(user.id);
+        if (freshUserData) {
+          setUser(freshUserData);
+        }
+      }
+    } catch (error) {
+      console.error('Error refreshing user data:', error);
+    }
+  }, [user]);
 
   // Initialize on component mount
   useEffect(() => {
@@ -24,7 +37,7 @@ export const AuthProvider = ({ children }) => {
     return () => {
       window.removeEventListener('dataSync', handleDataSync);
     };
-  }, []);
+  }, [refreshUserData]);
 
   const initializeAuth = () => {
     try {
@@ -152,18 +165,6 @@ export const AuthProvider = ({ children }) => {
     }
   };
 
-  const refreshUserData = () => {
-    try {
-      if (user && user.id) {
-        const freshUserData = secureStorage.getUserById(user.id);
-        if (freshUserData) {
-          setUser(freshUserData);
-        }
-      }
-    } catch (error) {
-      console.error('Error refreshing user data:', error);
-    }
-  };
 
   const getAllUsers = () => {
     return secureStorage.getUsers();

@@ -112,10 +112,12 @@ export const formatCurrency = (amount, currency = 'EUR') => {
   }).format(amount);
 };
 
-export default {
+const stripeService = {
   createPaymentIntent,
   processPayment,
   getStripeInstance,
   validatePaymentAmount,
   formatCurrency
 };
+
+export default stripeService;

@@ -1,4 +1,4 @@
-import { encryptData, decryptData, generateId, hashPassword } from './encryption';
+import { encryptData, decryptData, hashPassword } from './encryption';
 import { v4 as uuidv4 } from 'uuid';
 
 /**
@@ -446,5 +446,7 @@ class SecureStorage {
   }
 }
 
+const secureStorage = new SecureStorage();
+
 // Export singleton instance
-export default new SecureStorage();
+export default secureStorage;

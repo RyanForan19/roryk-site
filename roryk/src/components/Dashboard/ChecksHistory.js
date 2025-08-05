@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import { useAuth } from '../../context/AuthContext';
 
 export default function ChecksHistory() {
@@ -8,13 +8,7 @@ export default function ChecksHistory() {
   const [filter, setFilter] = useState('all');
   const [expandedTransaction, setExpandedTransaction] = useState(null);
 
-  useEffect(() => {
-    if (user) {
-      loadTransactions();
-    }
-  }, [user]);
-
-  const loadTransactions = () => {
+  const loadTransactions = useCallback(() => {
     try {
       const serviceTransactions = getUserServiceTransactions(user.id);
       setTransactions(serviceTransactions);
@@ -23,7 +17,13 @@ export default function ChecksHistory() {
     } finally {
       setLoading(false);
     }
-  };
+  }, [user, getUserServiceTransactions]);
+
+  useEffect(() => {
+    if (user) {
+      loadTransactions();
+    }
+  }, [user, loadTransactions]);
 
   const getServiceType = (transaction) => {
     return transaction.serviceType || 'unknown';

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import { useSearchParams, useNavigate, Link } from 'react-router-dom';
 import './Auth.css';
 
@@ -19,17 +19,7 @@ const ResetPassword = () => {
   const [error, setError] = useState('');
   const [showPassword, setShowPassword] = useState(false);
 
-  useEffect(() => {
-    if (!token) {
-      setError('Invalid reset link. No token provided.');
-      setIsValidating(false);
-      return;
-    }
-
-    validateToken();
-  }, [token]);
-
-  const validateToken = async () => {
+  const validateToken = useCallback(async () => {
     try {
       const response = await fetch(
         `${process.env.REACT_APP_API_URL || 'http://localhost:3001'}/api/password/validate-token/${token}`
@@ -51,7 +41,17 @@ const ResetPassword = () => {
     } finally {
       setIsValidating(false);
     }
-  };
+  }, [token]);
+
+  useEffect(() => {
+    if (!token) {
+      setError('Invalid reset link. No token provided.');
+      setIsValidating(false);
+      return;
+    }
+
+    validateToken();
+  }, [token, validateToken]);
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;

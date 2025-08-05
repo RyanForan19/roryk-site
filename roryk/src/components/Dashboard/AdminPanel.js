@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useAuth } from "../../context/AuthContext";
 import { Link, useNavigate } from "react-router-dom";
 import { format } from "date-fns";
@@ -19,12 +19,22 @@ export default function AdminPanel() {
   const [isLoading, setIsLoading] = useState(false);
   const [activeTab, setActiveTab] = useState("users"); // "users" or "pending"
 
+  const loadUsers = useCallback(() => {
+    const allUsers = getAllUsers();
+    setUsers(allUsers.filter(u => u.status !== 'pending'));
+  }, [getAllUsers]);
+
+  const loadPendingUsers = useCallback(() => {
+    const pending = getPendingUsers();
+    setPendingUsers(pending);
+  }, [getPendingUsers]);
+
   useEffect(() => {
     if (user && user.role === 'superadmin') {
       loadUsers();
       loadPendingUsers();
     }
-  }, [user]);
+  }, [user, loadUsers, loadPendingUsers]);
 
   // Check if user is superadmin
   if (!user || user.role !== 'superadmin') {
@@ -54,15 +64,6 @@ export default function AdminPanel() {
     );
   }
 
-  const loadUsers = () => {
-    const allUsers = getAllUsers();
-    setUsers(allUsers.filter(u => u.status !== 'pending'));
-  };
-
-  const loadPendingUsers = () => {
-    const pending = getPendingUsers();
-    setPendingUsers(pending);
-  };
 
   const handleApproveUser = async (userId, username) => {
     try {
