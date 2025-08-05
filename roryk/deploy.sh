@@ -71,8 +71,23 @@ check_prerequisites() {
 # Backup database (MongoDB Atlas)
 backup_database() {
     log "Database backup with MongoDB Atlas..."
-    warning "MongoDB Atlas provides automated backups. Manual backup skipped."
-    warning "To create manual backups, use: mongodump --uri=\"mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk\""
+    
+    # Check if mongodump is available for manual backup
+    if command -v mongodump &> /dev/null; then
+        log "Creating manual backup with mongodump..."
+        mkdir -p "$BACKUP_DIR"
+        BACKUP_FILE="$BACKUP_DIR/mongodb_atlas_backup_$(date +%Y%m%d_%H%M%S).gz"
+        
+        if mongodump --uri="mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk" --archive --gzip > "$BACKUP_FILE" 2>/dev/null; then
+            success "Atlas backup created: $BACKUP_FILE"
+        else
+            warning "Atlas backup failed, but continuing deployment..."
+        fi
+    else
+        warning "mongodump not found. MongoDB Atlas provides automated backups."
+        warning "To create manual backups, install mongodb-database-tools and use:"
+        warning "mongodump --uri=\"mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk\""
+    fi
 }
 
 # Install dependencies

@@ -214,6 +214,43 @@ If rollback to self-hosted MongoDB is needed:
    - Enable audit logging
    - Set up VPC peering if needed
 
+## Troubleshooting
+
+### PM2 Process Issues
+If you encounter errors like "Process 0 not found" or "roryk-mongodb" process errors:
+
+1. **Clean up PM2 processes:**
+   ```bash
+   chmod +x cleanup-pm2.sh
+   ./cleanup-pm2.sh
+   ```
+
+2. **Or manually clean up:**
+   ```bash
+   pm2 stop all
+   pm2 delete all
+   pm2 kill
+   pm2 flush
+   ```
+
+3. **Restart the application:**
+   ```bash
+   ./pm2-start.sh production
+   ```
+
+### Connection Issues
+If you see connection timeout errors:
+- Verify internet connectivity
+- Check MongoDB Atlas cluster status
+- Ensure IP whitelist is configured (if enabled)
+- Verify connection string credentials
+
+### Deployment Script Issues
+If deployment fails with database errors:
+- Ensure you're using the updated deployment scripts
+- Check that no old MongoDB processes are cached in PM2
+- Run the cleanup script before deploying
+
 ## Support and Resources
 
 - **MongoDB Atlas Documentation:** https://docs.atlas.mongodb.com/
@@ -223,5 +260,5 @@ If rollback to self-hosted MongoDB is needed:
 
 ---
 
-**Migration completed successfully on 2025-08-05**  
+**Migration completed successfully on 2025-08-05**
 **Status:** ✅ Production Ready
