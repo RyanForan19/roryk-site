@@ -37,18 +37,6 @@ module.exports = {
       log_file: './logs/frontend-combined.log',
       time: true
     },
-    {
-      name: 'roryk-mongodb',
-      script: 'mongod',
-      args: '--config ./mongodb.conf',
-      instances: 1,
-      autorestart: true,
-      watch: false,
-      max_memory_restart: '2G',
-      error_file: './logs/mongodb-error.log',
-      out_file: './logs/mongodb-out.log',
-      log_file: './logs/mongodb-combined.log',
-      time: true
-    }
+    // MongoDB removed - using MongoDB Atlas cloud service
   ]
 };

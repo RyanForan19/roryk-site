@@ -7,3 +7,1154 @@
 2025-08-05T09:01:48: 📍 Health check: http://localhost:3001/health
 2025-08-05T09:01:48: 💳 Stripe integration: ✅ Connected
 2025-08-05T09:01:48: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:34:17: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:34:17:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:34:17: (node:8100) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:34:17: (node:8100) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:34:17: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:34:17: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:34:17: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:34:17: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:34:47: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:34:48: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:34:48:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:34:48: (node:23104) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:34:48: (node:23104) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:34:48: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:34:48: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:34:48: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:34:48: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:35:18: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:35:19: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:35:19:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:35:19: (node:30588) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:35:19: (node:30588) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:35:19: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:35:19: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:35:19: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:35:19: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:35:49: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:35:50: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:35:50:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:35:50: (node:16008) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:35:50: (node:16008) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:35:50: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:35:50: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:35:50: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:35:50: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:36:20: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:36:21: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:36:21:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:36:21: (node:1684) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:36:21: (node:1684) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:36:21: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:36:21: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:36:21: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:36:21: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:36:51: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:36:52: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:36:52:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:36:52: (node:12660) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:36:52: (node:12660) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:36:52: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:36:52: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:36:52: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:36:52: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:37:22: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:37:23: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:37:23:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:37:23: (node:15516) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:37:23: (node:15516) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:37:23: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:37:23: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:37:23: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:37:23: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:37:53: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:37:54: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:37:54:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:37:54: (node:14612) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:37:54: (node:14612) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:37:54: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:37:54: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:37:54: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:37:54: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:38:24: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:38:25: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:38:25:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:38:25: (node:1440) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:38:25: (node:1440) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:38:25: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:38:25: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:38:25: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:38:25: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:38:55: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:38:56: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:38:56:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:38:56: (node:3544) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:38:56: (node:3544) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:38:56: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:38:56: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:38:56: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:38:56: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:39:26: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:39:27: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:39:27:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:39:27: (node:16752) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:39:27: (node:16752) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:39:27: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:39:27: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:39:27: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:39:27: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:39:57: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:39:58: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:39:58:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:39:58: (node:21316) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:39:58: (node:21316) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:39:58: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:39:58: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:39:58: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:39:58: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:40:28: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:40:29: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:40:29:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:40:29: (node:13408) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:40:29: (node:13408) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:40:29: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:40:29: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:40:29: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:40:29: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:40:59: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:41:00: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:41:00:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:41:00: (node:28228) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:41:00: (node:28228) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:41:00: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:41:00: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:41:00: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:41:00: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:41:30: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:41:32: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:41:32:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:41:32: (node:22004) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:41:32: (node:22004) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:41:32: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:41:32: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:41:32: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:41:32: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:42:02: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:42:03: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:42:03:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:42:03: (node:13172) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:42:03: (node:13172) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:42:03: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:42:03: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:42:03: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:42:03: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:42:33: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:42:35: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:42:35:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:42:35: (node:29208) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:42:35: (node:29208) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:42:35: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:42:35: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:42:35: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:42:35: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:43:05: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:43:07: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:43:07:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:43:07: (node:20700) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:43:07: (node:20700) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:43:07: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:43:07: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:43:07: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:43:07: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:43:37: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:43:39: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:43:39:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:43:39: (node:21860) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:43:39: (node:21860) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:43:39: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:43:39: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:43:39: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:43:39: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:44:09: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:44:11: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:44:11:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:44:11: (node:15356) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:44:11: (node:15356) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:44:11: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:44:11: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:44:11: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:44:11: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:44:41: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:44:42: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:44:42:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:44:42: (node:17120) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:44:42: (node:17120) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:44:42: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:44:42: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:44:42: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:44:42: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:45:12: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:45:13: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:45:13:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:45:13: (node:23208) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:45:13: (node:23208) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:45:13: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:45:13: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:45:13: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:45:13: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:45:43: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:45:45: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:45:45:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:45:45: (node:18552) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:45:45: (node:18552) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:45:45: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:45:45: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:45:45: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:45:45: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:46:15: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:46:16: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:46:16:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:46:16: (node:15244) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:46:16: (node:15244) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:46:16: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:46:16: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:46:16: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:46:16: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:46:46: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:46:47: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:46:47:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:46:47: (node:11528) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:46:47: (node:11528) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:46:47: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:46:47: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:46:47: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:46:47: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:47:17: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:47:18: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:47:18:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:47:18: (node:19156) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:47:18: (node:19156) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:47:18: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:47:18: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:47:18: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:47:18: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:47:48: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:47:49: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:47:49:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:47:49: (node:21540) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:47:49: (node:21540) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:47:49: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:47:49: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:47:49: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:47:49: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:48:19: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:48:21: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:48:21:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:48:21: (node:13372) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:48:21: (node:13372) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:48:21: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:48:21: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:48:21: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:48:21: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:48:51: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:48:52: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:48:52:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:48:52: (node:12188) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:48:52: (node:12188) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:48:52: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:48:52: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:48:52: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:48:52: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:49:22: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:49:23: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:49:23:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:49:23: (node:14056) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:49:23: (node:14056) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:49:23: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:49:23: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:49:23: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:49:23: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:49:53: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:49:54: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:49:54:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:49:54: (node:28884) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:49:54: (node:28884) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:49:54: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:49:54: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:49:54: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:49:54: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:50:24: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:50:25: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:50:25:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:50:25: (node:28796) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:50:25: (node:28796) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:50:25: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:50:25: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:50:25: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:50:25: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:50:55: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:50:56: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:50:56:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:50:56: (node:20208) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:50:56: (node:20208) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:50:56: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:50:56: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:50:56: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:50:56: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:51:26: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:51:27: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:51:27:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:51:27: (node:30464) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:51:27: (node:30464) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:51:27: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:51:27: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:51:27: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:51:27: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:51:57: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:51:58: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:51:58:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:51:58: (node:2072) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:51:58: (node:2072) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:51:58: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:51:58: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:51:58: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:51:58: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:52:28: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:52:29: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:52:29:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:52:29: (node:29484) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:52:29: (node:29484) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:52:29: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:52:29: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:52:29: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:52:29: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:52:59: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:53:00: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:53:00:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:53:00: (node:16448) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:53:00: (node:16448) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:53:00: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:53:00: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:53:00: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:53:00: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:53:30: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:53:32: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:53:32:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:53:32: (node:21812) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:53:32: (node:21812) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:53:32: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:53:32: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:53:32: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:53:32: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:54:02: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:54:03: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:54:03:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:54:03: (node:8796) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:54:03: (node:8796) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:54:03: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:54:03: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:54:03: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:54:03: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:54:33: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:54:34: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:54:34:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:54:34: (node:6972) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:54:34: (node:6972) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:54:34: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:54:34: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:54:34: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:54:34: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:55:04: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:55:05: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:55:05:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:55:05: (node:12608) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:55:05: (node:12608) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:55:05: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:55:05: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:55:05: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:55:05: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:55:35: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:55:36: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:55:36:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:55:36: (node:15092) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:55:36: (node:15092) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:55:36: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:55:36: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:55:36: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:55:36: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:56:06: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:56:07: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:56:07:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:56:07: (node:8536) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:56:07: (node:8536) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:56:07: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:56:07: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:56:07: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:56:07: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:56:37: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:56:38: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:56:38:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:56:38: (node:18420) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:56:38: (node:18420) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:56:38: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:56:38: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:56:38: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:56:38: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:57:08: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:57:10: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:57:10:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:57:10: (node:28492) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:57:10: (node:28492) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:57:10: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:57:10: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:57:10: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:57:10: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:57:40: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:57:41: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:57:41:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:57:41: (node:10196) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:57:41: (node:10196) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:57:41: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:57:41: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:57:41: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:57:41: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:58:11: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:58:12: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:58:12:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:58:12: (node:7532) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:58:12: (node:7532) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:58:12: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:58:12: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:58:12: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:58:12: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:58:42: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:58:43: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:58:43:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:58:43: (node:11272) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:58:43: (node:11272) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:58:43: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:58:43: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:58:43: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:58:43: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:59:13: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:59:14: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:59:14:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:59:14: (node:20364) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:59:14: (node:20364) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:59:14: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:59:14: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:59:14: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:59:14: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T11:59:44: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T11:59:45: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T11:59:45:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T11:59:45: (node:30188) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T11:59:45: (node:30188) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T11:59:45: 🚀 RoryK Backend API running on port 3001
+2025-08-05T11:59:45: 📍 Health check: http://localhost:3001/health
+2025-08-05T11:59:45: 💳 Stripe integration: ✅ Connected
+2025-08-05T11:59:45: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:00:15: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:00:16: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:00:16:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:00:16: (node:24736) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:00:16: (node:24736) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:00:16: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:00:16: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:00:16: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:00:16: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:00:46: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:00:47: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:00:47:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:00:47: (node:19984) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:00:47: (node:19984) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:00:47: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:00:47: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:00:47: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:00:47: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:01:17: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:01:18: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:01:18:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:01:18: (node:2824) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:01:18: (node:2824) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:01:18: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:01:18: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:01:18: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:01:18: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:01:48: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:01:49: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:01:49:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:01:49: (node:21076) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:01:49: (node:21076) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:01:49: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:01:49: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:01:49: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:01:49: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:02:19: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:02:20: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:02:20:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:02:20: (node:7392) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:02:20: (node:7392) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:02:20: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:02:20: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:02:20: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:02:20: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:02:50: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:02:51: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:02:51:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:02:51: (node:26192) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:02:51: (node:26192) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:02:51: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:02:51: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:02:51: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:02:51: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:03:21: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:03:22: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:03:22:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:03:22: (node:6924) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:03:22: (node:6924) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:03:22: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:03:22: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:03:22: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:03:22: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:03:52: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:03:53: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:03:53:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:03:53: (node:25412) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:03:53: (node:25412) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:03:53: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:03:53: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:03:53: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:03:53: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:04:23: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:04:24: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:04:24:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:04:24: (node:11492) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:04:24: (node:11492) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:04:24: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:04:24: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:04:24: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:04:24: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:04:54: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:04:55: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:04:55:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:04:55: (node:12152) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:04:55: (node:12152) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:04:55: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:04:55: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:04:55: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:04:55: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:05:25: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:05:27: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:05:27:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:05:27: (node:4400) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:05:27: (node:4400) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:05:27: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:05:27: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:05:27: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:05:27: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:05:57: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:05:57: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:05:57:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:05:58: (node:10352) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:05:58: (node:10352) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:05:58: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:05:58: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:05:58: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:05:58: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:06:28: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:06:28: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:06:28:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:06:29: (node:28212) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:06:29: (node:28212) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:06:29: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:06:29: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:06:29: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:06:29: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:06:59: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:06:59: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:06:59:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:06:59: (node:11064) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:06:59: (node:11064) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:06:59: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:07:00: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:07:00: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:07:00: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:07:30: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:07:30: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:07:30:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:07:30: (node:7852) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:07:30: (node:7852) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:07:30: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:07:30: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:07:30: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:07:30: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:08:00: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:08:01: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:08:01:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:08:01: (node:8228) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:08:01: (node:8228) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:08:01: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:08:01: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:08:01: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:08:01: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:08:31: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:08:32: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:08:32:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:08:32: (node:14024) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:08:32: (node:14024) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:08:32: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:08:32: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:08:32: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:08:32: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:09:02: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:09:03: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:09:03:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:09:03: (node:17864) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:09:03: (node:17864) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:09:03: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:09:03: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:09:03: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:09:03: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:09:33: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:09:34: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:09:34:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:09:34: (node:24992) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:09:34: (node:24992) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:09:34: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:09:34: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:09:34: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:09:34: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:10:04: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:10:05: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:10:05:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:10:05: (node:16736) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:10:05: (node:16736) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:10:05: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:10:05: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:10:05: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:10:05: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:10:35: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:10:36: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:10:36:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:10:36: (node:27940) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:10:36: (node:27940) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:10:36: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:10:36: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:10:36: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:10:36: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:11:06: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:11:07: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:11:07:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:11:07: (node:28444) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:11:07: (node:28444) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:11:07: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:11:07: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:11:07: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:11:07: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:11:37: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:11:38: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:11:38:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:11:38: (node:2020) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:11:38: (node:2020) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:11:38: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:11:38: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:11:38: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:11:38: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:12:08: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:12:09: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:12:09:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:12:09: (node:25748) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:12:09: (node:25748) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:12:09: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:12:09: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:12:09: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:12:09: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:12:39: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:12:40: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:12:40:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:12:40: (node:17340) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:12:40: (node:17340) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:12:40: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:12:40: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:12:40: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:12:40: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:13:10: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:13:11: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:13:11:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:13:11: (node:24948) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:13:11: (node:24948) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:13:11: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:13:11: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:13:11: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:13:11: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:13:41: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:13:43: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:13:43:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:13:43: (node:7024) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:13:43: (node:7024) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:13:43: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:13:43: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:13:43: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:13:43: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:13: ❌ MongoDB connection error: connect ECONNREFUSED ::1:27017, connect ECONNREFUSED 127.0.0.1:27017
+2025-08-05T12:14:14: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:14:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:14: (node:5880) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:14: (node:5880) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:14: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:14: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:14: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:14: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:14: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:15: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:15:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:15: (node:23164) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:15: (node:23164) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:15: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:15: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:15: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:15: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:15: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:16: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:16:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:16: (node:30352) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:16: (node:30352) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:16: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:16: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:16: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:16: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:16: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:17: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:17:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:17: (node:8740) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:17: (node:8740) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:17: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:17: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:17: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:17: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:17: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:18: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:18:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:18: (node:2936) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:18: (node:2936) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:18: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:18: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:18: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:18: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:18: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:19: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:19:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:20: (node:18884) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:20: (node:18884) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:20: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:20: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:20: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:20: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:20: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:21: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:21:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:21: (node:3628) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:21: (node:3628) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:21: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:21: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:21: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:21: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:21: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:22: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:22:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:22: (node:24272) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:22: (node:24272) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:22: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:22: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:22: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:22: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:22: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:23: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:23:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:23: (node:3556) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:23: (node:3556) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:23: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:23: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:23: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:23: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:23: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:24: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:24:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:24: (node:30016) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:24: (node:30016) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:24: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:24: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:24: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:24: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:24: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:25: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:25:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:25: (node:28076) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:25: (node:28076) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:25: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:25: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:25: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:25: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:25: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:27: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:27:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:27: (node:2252) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:27: (node:2252) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:27: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:27: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:27: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:27: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:27: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:28: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:28:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:28: (node:5452) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:28: (node:5452) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:28: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:28: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:28: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:28: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:28: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:29: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:29:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:29: (node:6256) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:29: (node:6256) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:29: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:29: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:29: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:29: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:29: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:30: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:30:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:30: (node:29372) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:30: (node:29372) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:30: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:30: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:30: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:30: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:30: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:31: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:31:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:31: (node:10540) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:31: (node:10540) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:31: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:31: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:31: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:31: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:31: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:32: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:32:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:32: (node:11640) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:32: (node:11640) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:32: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:32: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:32: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:32: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:32: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:33: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:33:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:33: (node:15344) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:33: (node:15344) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:33: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:33: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:33: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:33: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:33: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:34: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:34:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:34: (node:25452) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:34: (node:25452) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:34: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:34: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:34: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:34: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:34: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:36: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:36:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:36: (node:26128) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:36: (node:26128) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:36: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:36: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:36: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:36: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:36: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:37: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:37:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:37: (node:20088) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:37: (node:20088) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:37: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:37: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:37: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:37: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:37: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:38: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:38:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:38: (node:2644) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:38: (node:2644) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:38: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:38: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:38: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:38: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:38: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:39: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:39:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:39: (node:28364) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:39: (node:28364) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:39: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:39: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:39: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:39: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:39: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:40: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:40:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:40: (node:11544) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:40: (node:11544) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:40: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:40: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:40: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:40: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:40: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:41: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:41:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:41: (node:13044) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:41: (node:13044) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:41: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:41: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:41: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:41: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:41: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:42: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:42:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:42: (node:17096) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:42: (node:17096) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:42: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:42: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:42: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:42: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:42: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:43: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:43:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:43: (node:11724) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:43: (node:11724) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:43: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:43: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:43: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:43: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:43: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:45: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:45:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:45: (node:11632) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:45: (node:11632) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:45: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:45: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:45: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:45: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:45: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:46: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:46:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:46: (node:30676) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:46: (node:30676) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:46: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:46: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:46: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:46: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:46: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:47: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:47:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:47: (node:13328) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:47: (node:13328) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:47: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:47: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:47: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:47: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:47: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:48: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:48:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:48: (node:19388) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:48: (node:19388) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:48: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:48: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:48: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:48: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:48: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:49: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:49:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:49: (node:24480) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:49: (node:24480) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:49: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:49: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:49: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:49: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:49: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:50: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:50:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:50: (node:30464) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:50: (node:30464) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:50: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:50: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:50: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:50: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:50: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:51: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:51:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:51: (node:23804) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:51: (node:23804) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:51: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:51: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:51: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:51: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:51: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:52: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:52:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:52: (node:20448) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:52: (node:20448) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:52: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:52: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:52: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:52: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:52: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:54: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:54:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:54: (node:11404) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:54: (node:11404) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:54: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:54: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:54: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:54: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:54: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:55: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:55:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:55: (node:11460) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:55: (node:11460) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:55: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:55: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:55: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:55: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:55: ❌ MongoDB connection error: querySrv ENOTFOUND _mongodb._tcp.cluster0.mongodb.net
+2025-08-05T12:14:56: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T12:14:56:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T12:14:56: (node:15852) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T12:14:56: (node:15852) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T12:14:56: 🚀 RoryK Backend API running on port 3001
+2025-08-05T12:14:56: 📍 Health check: http://localhost:3001/health
+2025-08-05T12:14:56: 💳 Stripe integration: ✅ Connected
+2025-08-05T12:14:56: 🌐 CORS enabled for: http://localhost:3000
+2025-08-05T12:14:57: 🗄️  MongoDB Connected: ac-itkbm75-shard-00-00.ofpdpmr.mongodb.net
+2025-08-05T12:14:57: ✅ Default admin user created (username: admin, password: admin123)

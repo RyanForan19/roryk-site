@@ -309,20 +309,29 @@ ssh -i /path/to/your/private-key.pem ubuntu@YOUR_PUBLIC_IP
 
 ### Step 7: Deploy RoryK Application
 
+**⚠️ IMPORTANT: Stay as ubuntu user - DO NOT switch to root!**
+
+You should see: `ubuntu@your-server:~$`
+- ✅ **Correct**: `ubuntu@server:~$`
+- ❌ **Wrong**: `root@server:~#`
+
+**Why stay as ubuntu user:**
+- **Security**: Running as root is dangerous
+- **Best Practice**: Use `sudo` for admin tasks only
+- **PM2**: Works better with regular user account
+- **File Permissions**: Avoids permission issues
+
 #### 7.1 Update System
 ```bash
 sudo apt update && sudo apt upgrade -y
 ```
 
-#### 7.2 Deploy RoryK (One Command)
-```bash
-curl -fsSL https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh | bash
-```
+#### 7.2 Deploy RoryK
 
-**Or Manual Deployment:**
+**Method 1 - Manual Deployment (Recommended):**
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/roryk.git
+git clone https://github.com/RyanForan19/roryk-site.git
 cd roryk
 
 # Make scripts executable
@@ -330,6 +339,25 @@ chmod +x *.sh
 
 # Deploy
 ./deploy.sh production deploy
+```
+
+**Method 2 - One Command (if curl works):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/RyanForan19/roryk-site/main/roryk/free-cloud-deploy.sh | bash
+```
+
+**Method 3 - If curl gives "Failure writing output" error:**
+```bash
+# Check disk space first
+df -h
+
+# Clean up if needed
+sudo apt clean && sudo apt autoremove
+
+# Try manual download
+wget https://raw.githubusercontent.com/RyanForan19/roryk-site/main/roryk/free-cloud-deploy.sh
+chmod +x free-cloud-deploy.sh
+./free-cloud-deploy.sh
 ```
 
 #### 7.3 Verify Deployment
@@ -513,6 +541,189 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 # - Ensure you're in the correct compartment (root)
 # - Some regions may have different DRG requirements
 # - Try refreshing the page and creating again
+```
+
+#### 4. Deployment Script Issues
+**Error**: "curl: (23) Failure writing output to destination"
+
+**Solutions:**
+
+**Method 1 - Check Disk Space:**
+```bash
+# Check available disk space
+df -h
+
+# If disk is full, clean up:
+sudo apt clean
+sudo apt autoremove
+rm -rf /tmp/*
+
+# Check again
+df -h
+```
+
+**Method 2 - Fix Permissions:**
+```bash
+# Ensure current directory is writable
+ls -la
+chmod 755 .
+
+# Or run from home directory
+cd ~
+curl -fsSL https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh | bash
+```
+
+**Method 3 - Manual Download:**
+```bash
+# Download script manually first
+wget https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh
+chmod +x free-cloud-deploy.sh
+./free-cloud-deploy.sh
+```
+
+**Method 4 - Alternative Manual Deployment:**
+```bash
+# Skip the curl script and deploy manually:
+git clone https://github.com/yourusername/roryk.git
+cd roryk
+chmod +x *.sh
+./deploy.sh production deploy
+```
+
+**Method 5 - Check /tmp Directory:**
+```bash
+# curl might be trying to write to /tmp
+ls -la /tmp
+sudo chmod 1777 /tmp
+
+# Or set TMPDIR to writable location
+export TMPDIR=$HOME/tmp
+mkdir -p $HOME/tmp
+curl -fsSL https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh | bash
+```
+
+#### 5. Files Saved But Not Visible in ls
+**Issue**: "Files are saving but they don't show in ls"
+
+**Solutions:**
+
+**Method 1 - Check for Hidden Files:**
+```bash
+# Show all files including hidden ones
+ls -la
+
+# Show all files in current directory
+ls -A
+
+# Check if files are in a different directory
+pwd
+find . -name "*.sh" -type f
+```
+
+**Method 2 - Check Current Directory:**
+```bash
+# Verify you're in the right directory
+pwd
+ls -la
+
+# If files are elsewhere, find them
+find /home -name "roryk*" -type d 2>/dev/null
+find /home -name "*.sh" -type f 2>/dev/null
+```
+
+**Method 3 - Check File Permissions:**
+```bash
+# Files might exist but have wrong permissions
+ls -la
+stat filename.sh  # Replace with actual filename
+
+# Fix permissions if needed
+chmod 644 *.sh
+chmod +x *.sh
+```
+
+**Method 4 - Check Different Locations:**
+```bash
+# Files might be in different directories
+cd ~
+ls -la
+cd /tmp
+ls -la
+cd /var/tmp
+ls -la
+```
+
+**Method 5 - Manual File Creation Test:**
+```bash
+# Test if you can create files in current directory
+touch test.txt
+ls -la test.txt
+rm test.txt
+
+# If that works, the issue is with the download
+```
+
+**Method 6 - Alternative Download Methods:**
+```bash
+# Try different download methods
+wget https://raw.githubusercontent.com/RyanForan19/roryk-site/main/roryk/free-cloud-deploy.sh
+ls -la *.sh
+
+# Or use git clone
+git clone https://github.com/RyanForan19/roryk-site.git
+cd roryk-site/roryk
+ls -la
+```
+
+#### 6. Server Not Working / Can't See Files
+**Issue**: "I don't think the server is working, I can't see any files"
+
+**📋 Complete Diagnostics Guide**: See [ORACLE_CLOUD_DIAGNOSTICS.md](./ORACLE_CLOUD_DIAGNOSTICS.md)
+
+**Quick Diagnostic Commands:**
+```bash
+# Test basic server functionality
+whoami          # Should show: ubuntu
+pwd             # Should show: /home/ubuntu
+ls -la          # Should show at least . and .. directories
+date            # Should show current date/time
+df -h           # Check disk space
+
+# Test network connectivity
+ping -c 3 google.com
+curl -I https://github.com
+
+# Test file operations
+touch test.txt
+ls -la test.txt
+rm test.txt
+```
+
+**Common Solutions:**
+```bash
+# If ls shows nothing:
+cd ~
+pwd
+ls -la
+
+# If network doesn't work:
+echo "nameserver 8.8.8.8" | sudo tee /etc/resolv.conf
+
+# If disk is full:
+sudo apt clean && sudo apt autoremove
+df -h
+
+# If permissions are wrong:
+sudo chown -R ubuntu:ubuntu /home/ubuntu
+```
+
+**Emergency Reset:**
+```bash
+# Exit and reconnect
+exit
+ssh -i your-key.pem ubuntu@your-server-ip
+
+# Or reboot instance in Oracle Cloud Console
 ```
 
 #### 2. ARM Instance Capacity Issues (Very Common)

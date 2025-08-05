@@ -47,7 +47,7 @@ sudo apt install -y curl wget git nginx certbot python3-certbot-nginx ufw htop
 
 # Install Node.js
 log "📦 Installing Node.js..."
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 sudo apt-get install -y nodejs
 
 # Verify Node.js installation
@@ -82,7 +82,7 @@ log "🚀 Deploying RoryK application..."
 log "🔒 Configuring firewall..."
 sudo ufw allow ssh
 sudo ufw allow 'Nginx Full'
-sudo ufw deny 27017  # Block direct MongoDB access
+# MongoDB Atlas is used - no local MongoDB port to block
 sudo ufw --force enable
 
 # Get public IP
@@ -95,7 +95,7 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ba
 sudo tee /etc/nginx/sites-available/default > /dev/null << EOF
 server {
     listen 80;
-    server_name _;
+    server_name roryk.ryanforanlennon.ie;
 
     # Security headers
     add_header X-Frame-Options "SAMEORIGIN" always;
@@ -196,7 +196,7 @@ EOF
 
 chmod +x ~/roryk-update.sh
 
-# Create backup script
+# Create backup script (MongoDB Atlas)
 cat > ~/roryk-backup.sh << 'EOF'
 #!/bin/bash
 BACKUP_DIR="$HOME/backups"
@@ -204,14 +204,24 @@ DATE=$(date +%Y%m%d_%H%M%S)
 
 mkdir -p $BACKUP_DIR
 
-echo "📦 Creating backup..."
-mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip > "$BACKUP_DIR/mongodb_$DATE.gz"
+echo "📦 Creating MongoDB Atlas backup..."
+echo "⚠️  Note: MongoDB Atlas provides automated backups."
+echo "⚠️  For manual backup, use: mongodump --uri=\"mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk\" --archive --gzip > \"$BACKUP_DIR/mongodb_atlas_$DATE.gz\""
+echo "⚠️  Make sure mongodump is installed: sudo apt install mongodb-database-tools"
 
-# Keep only last 7 backups
-ls -t $BACKUP_DIR/mongodb_*.gz | tail -n +8 | xargs -r rm
-
-echo "✅ Backup created: mongodb_$DATE.gz"
-echo "📁 Backup location: $BACKUP_DIR"
+# Optional: Create application data backup if mongodump is available
+if command -v mongodump &> /dev/null; then
+    echo "📦 Creating manual backup with mongodump..."
+    mongodump --uri="mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk" --archive --gzip > "$BACKUP_DIR/mongodb_atlas_$DATE.gz"
+    
+    # Keep only last 7 backups
+    ls -t $BACKUP_DIR/mongodb_atlas_*.gz | tail -n +8 | xargs -r rm
+    
+    echo "✅ Backup created: mongodb_atlas_$DATE.gz"
+    echo "📁 Backup location: $BACKUP_DIR"
+else
+    echo "⚠️  mongodump not found. Install with: sudo apt install mongodb-database-tools"
+fi
 EOF
 
 chmod +x ~/roryk-backup.sh

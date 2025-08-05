@@ -66,6 +66,7 @@ install_mongodb_debian() {
     sudo apt-get install -y mongodb-org
     
     success "MongoDB installed successfully"
+
 }
 
 # Install MongoDB on CentOS/RHEL

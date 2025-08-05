@@ -1,14 +1,14 @@
 # RoryK Vehicle Checking Application
 
-A comprehensive vehicle checking application with Stripe payment integration, self-hosted MongoDB database, and complete password management system. Ready for production deployment.
+A comprehensive vehicle checking application with Stripe payment integration, MongoDB Atlas cloud database, and complete password management system. Ready for production deployment.
 
 ## 🚀 Quick Start
 
 ### Prerequisites
 - Node.js (v16 or higher)
-- MongoDB (v7.0 or higher)
 - PM2 (Process Manager)
 - Git
+- MongoDB Atlas account (free tier available)
 
 ### 1. Clone and Install
 ```bash
@@ -29,18 +29,12 @@ cp backend/.env.example backend/.env
 # Edit .env files with your Stripe keys and other settings
 ```
 
-### 3. Install PM2 and MongoDB
+### 3. Install PM2
 ```bash
 # Install PM2 globally
 npm install -g pm2
 
-# Install MongoDB (automated setup)
-# Linux/Mac
-chmod +x setup-mongodb.sh
-./setup-mongodb.sh
-
-# Windows - Install MongoDB manually from:
-# https://www.mongodb.com/try/download/community
+# MongoDB Atlas is used - no local MongoDB installation needed
 ```
 
 ### 4. Start Application
@@ -68,13 +62,12 @@ For production deployment, see:
 #### Linux Production (Recommended)
 ```bash
 # Make scripts executable
-chmod +x setup-mongodb.sh pm2-start.sh pm2-stop.sh deploy.sh
+chmod +x pm2-start.sh pm2-stop.sh deploy.sh
 
 # Automated production deployment
 ./deploy.sh production deploy
 
 # Or manual step-by-step
-./setup-mongodb.sh          # Install and configure MongoDB
 npm install -g pm2          # Install PM2 globally
 npm install && cd backend && npm install && cd ..  # Install dependencies
 npm run build               # Build frontend
@@ -106,7 +99,7 @@ See [Free Deployment Guide](./FREE_DEPLOYMENT_GUIDE.md) for complete instruction
 ### Linux Production Requirements
 - **Ubuntu 20.04+** or **CentOS 8+**
 - **Node.js 16+** and **npm 8+**
-- **MongoDB 7.0+** (auto-installed by setup script)
+- **MongoDB Atlas** (cloud database service)
 - **PM2** (auto-installed by deployment script)
 - **Nginx** (for reverse proxy - optional but recommended)
 - **SSL Certificate** (Let's Encrypt recommended)
@@ -123,7 +116,7 @@ See [Free Deployment Guide](./FREE_DEPLOYMENT_GUIDE.md) for complete instruction
    ```
 
 ### Database Configuration
-The application uses a locally installed MongoDB instance managed by PM2. The setup script will automatically install and configure MongoDB with proper authentication.
+The application uses MongoDB Atlas, a cloud-hosted MongoDB service. No local MongoDB installation is required. See [MongoDB Atlas Migration Guide](./MONGODB_ATLAS_MIGRATION.md) for details.
 
 ## 📁 Project Structure
 
@@ -185,16 +178,18 @@ After database initialization, a default admin account is created:
 
 ## 🗄️ Database
 
-### Local MongoDB Installation
-- Native MongoDB installation managed by PM2
+### MongoDB Atlas (Cloud Database)
+- Fully managed MongoDB service in the cloud
 - Automatic database initialization with proper indexing
-- User authentication and role-based access control
-- Configuration file-based setup
+- Built-in security, backups, and monitoring
+- No local installation or maintenance required
 
 ### Database Access
-- **MongoDB**: `mongodb://localhost:27017/roryk`
-- **Connection String**: `mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk`
-- **Admin Access**: `mongodb://admin:roryk-admin-password-2024@localhost:27017/roryk?authSource=admin`
+- **MongoDB Atlas**: `mongodb+srv://roryk.ofpdpmr.mongodb.net/roryk`
+- **Connection String**: `mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk?retryWrites=true&w=majority`
+- **Manual Access**: `mongosh "mongodb+srv://roryk.ofpdpmr.mongodb.net/" --apiVersion 1 --username foranlennon --password akptLxS8mkxSPCNN`
+
+For migration details from self-hosted MongoDB, see [MongoDB Atlas Migration Guide](./MONGODB_ATLAS_MIGRATION.md).
 
 ### Email Configuration
 The application includes a complete email service for password resets:
@@ -299,12 +294,13 @@ For detailed production deployment instructions, see:
   4. Check spam/junk folders
 
 #### Database Connection Issues
-- **Issue**: Cannot connect to MongoDB
+- **Issue**: Cannot connect to MongoDB Atlas
 - **Solutions**:
-  1. Check MongoDB status: `pm2 status roryk-mongodb`
-  2. View MongoDB logs: `pm2 logs roryk-mongodb`
-  3. Restart MongoDB: `pm2 restart roryk-mongodb`
-  4. Check MongoDB configuration: `./mongodb.conf`
+  1. Check internet connectivity
+  2. Verify MongoDB Atlas connection string in environment files
+  3. Check MongoDB Atlas cluster status in Atlas dashboard
+  4. Verify IP whitelist settings in Atlas (if configured)
+  5. Check backend logs: `pm2 logs roryk-backend`
 
 #### Payment Processing Failures
 - **Issue**: Payments failing or timing out
@@ -325,15 +321,15 @@ For detailed production deployment instructions, see:
 ### Logs and Debugging
 - **Frontend**: Browser Developer Tools Console
 - **Backend**: `pm2 logs roryk-backend`
-- **Database**: `pm2 logs roryk-mongodb`
+- **Database**: MongoDB Atlas dashboard and logs
 - **All Services**: `pm2 logs`
 
 ## 📊 Monitoring
 
 ### Health Checks
 - Frontend: http://localhost:3000
-- Backend: http://localhost:3001/api/health (if implemented)
-- Database: `mongo --eval "db.adminCommand('ismaster')"`
+- Backend: http://localhost:3001/health
+- Database: MongoDB Atlas dashboard monitoring
 - PM2 Status: `pm2 status`
 
 ### Performance Monitoring
@@ -390,8 +386,8 @@ For support and questions:
 
 ### Regular Maintenance Tasks
 - Update dependencies: `npm audit fix`
-- Database backups: `mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk"`
-- Monitor disk space for MongoDB data directory
+- Database backups: Automated by MongoDB Atlas (manual: `mongodump --uri="mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk"`)
+- Monitor MongoDB Atlas dashboard for performance metrics
 - Review and rotate JWT secrets periodically
 - Update Stripe webhook endpoints if needed
 - Clean up expired password reset tokens
@@ -400,11 +396,11 @@ For support and questions:
 - Monitor PM2 processes: `pm2 status`
 
 ### Automated Maintenance
-- Database backups (daily at 2 AM via cron)
+- Database backups (automated by MongoDB Atlas)
 - SSL certificate renewal (automatic with certbot)
 - Security updates (weekly)
 - PM2 log rotation and cleanup
-- Performance monitoring with PM2 monit
+- Performance monitoring with PM2 monit and Atlas dashboard
 
 ### Version History
 - **v1.0.0**: Initial release with localStorage
@@ -412,3 +408,4 @@ For support and questions:
 - **v2.1.0**: Self-hosted database solution with Docker
 - **v2.2.0**: Complete password management system and production deployment
 - **v3.0.0**: PM2 process management replacing Docker dependencies
+- **v3.1.0**: MongoDB Atlas cloud database migration

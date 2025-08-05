@@ -56,12 +56,8 @@ check_prerequisites() {
         npm install -g pm2
     fi
     
-    # Check if MongoDB is installed
-    if ! command -v mongod &> /dev/null; then
-        warning "MongoDB is not installed. Running MongoDB setup script..."
-        chmod +x ./setup-mongodb.sh
-        ./setup-mongodb.sh
-    fi
+    # MongoDB Atlas is used - no local MongoDB installation needed
+    log "Using MongoDB Atlas - skipping local MongoDB setup"
     
     # Check if serve is installed (for frontend)
     if ! command -v serve &> /dev/null; then
@@ -72,20 +68,11 @@ check_prerequisites() {
     success "All prerequisites are met"
 }
 
-# Backup database
+# Backup database (MongoDB Atlas)
 backup_database() {
-    log "Creating database backup..."
-    
-    mkdir -p "$BACKUP_DIR"
-    
-    # Create MongoDB backup
-    BACKUP_FILE="$BACKUP_DIR/mongodb_backup_$(date +%Y%m%d_%H%M%S).gz"
-    
-    if mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip > "$BACKUP_FILE"; then
-        success "Database backup created: $BACKUP_FILE"
-    else
-        warning "Database backup failed, but continuing deployment..."
-    fi
+    log "Database backup with MongoDB Atlas..."
+    warning "MongoDB Atlas provides automated backups. Manual backup skipped."
+    warning "To create manual backups, use: mongodump --uri=\"mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk\""
 }
 
 # Install dependencies
@@ -120,23 +107,28 @@ build_application() {
     success "Application built"
 }
 
-# Start database
-start_database() {
-    log "Starting database..."
+# Database connection check (MongoDB Atlas)
+check_database_connection() {
+    log "Checking MongoDB Atlas connection..."
     
-    # Start MongoDB with PM2
-    pm2 start ecosystem.config.js --only roryk-mongodb
-    
-    # Wait for database to be ready
-    log "Waiting for database to be ready..."
-    sleep 10
-    
-    # Check if database is accessible
-    if mongo --eval "db.adminCommand('ismaster')" > /dev/null 2>&1; then
-        success "Database is ready"
+    # Test connection using Node.js (since we're using Atlas)
+    cd backend
+    if node -e "
+        const mongoose = require('mongoose');
+        const uri = process.env.MONGODB_URI || 'mongodb+srv://foranlennon:akptLxS8mkxSPCNN@roryk.ofpdpmr.mongodb.net/roryk?retryWrites=true&w=majority';
+        mongoose.connect(uri).then(() => {
+            console.log('MongoDB Atlas connection successful');
+            process.exit(0);
+        }).catch(err => {
+            console.error('MongoDB Atlas connection failed:', err.message);
+            process.exit(1);
+        });
+    " 2>/dev/null; then
+        success "MongoDB Atlas connection verified"
     else
-        error "Database failed to start properly"
+        warning "MongoDB Atlas connection test failed, but continuing deployment..."
     fi
+    cd ..
 }
 
 # Deploy backend
@@ -229,7 +221,7 @@ deploy() {
     backup_database
     install_dependencies
     build_application
-    start_database
+    check_database_connection
     deploy_backend
     deploy_frontend
     health_check
@@ -239,7 +231,7 @@ deploy() {
     log "Application is now running:"
     log "  Frontend: http://localhost:3000"
     log "  Backend: http://localhost:3001"
-    log "  Database Admin: http://localhost:8081"
+    log "  Database: MongoDB Atlas (Cloud)"
     
     if [ "$DEPLOY_ENV" = "production" ]; then
         log ""
@@ -259,12 +251,9 @@ rollback() {
     # Stop services
     pm2 stop all || true
     
-    # Restore database from latest backup
-    LATEST_BACKUP=$(ls -t "$BACKUP_DIR"/mongodb_backup_*.gz 2>/dev/null | head -n1)
-    if [ -n "$LATEST_BACKUP" ]; then
-        log "Restoring database from: $LATEST_BACKUP"
-        mongorestore --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip < "$LATEST_BACKUP"
-    fi
+    # Database rollback with MongoDB Atlas
+    warning "Database rollback with MongoDB Atlas requires manual intervention"
+    warning "Use MongoDB Atlas UI or mongorestore with Atlas connection string"
     
     success "Rollback completed"
 }

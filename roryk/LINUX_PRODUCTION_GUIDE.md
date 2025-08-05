@@ -146,7 +146,7 @@ mongod --config ./mongodb.conf --fork
 sleep 5
 
 # Create admin user
-mongo --eval "
+mongosh --eval "
 db = db.getSiblingDB('admin');
 db.createUser({
   user: 'admin',
@@ -156,7 +156,7 @@ db.createUser({
 "
 
 # Create application user
-mongo --eval "
+mongosh --eval "
 db = db.getSiblingDB('roryk');
 db.createUser({
   user: 'roryk_app',
@@ -258,13 +258,13 @@ sudo nano /etc/nginx/sites-available/roryk
 ```nginx
 server {
     listen 80;
-    server_name yourdomain.com www.yourdomain.com;
+    server_name roryk.ryanforanlennon.ie;
     return 301 https://$server_name$request_uri;
 }
 
 server {
     listen 443 ssl http2;
-    server_name yourdomain.com www.yourdomain.com;
+    server_name roryk.ryanforanlennon.ie;
 
     # SSL Configuration (will be added by Certbot)
     # ssl_certificate /etc/letsencrypt/live/yourdomain.com/fullchain.pem;

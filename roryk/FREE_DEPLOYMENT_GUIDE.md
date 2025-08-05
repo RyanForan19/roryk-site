@@ -91,7 +91,7 @@ sudo cp /etc/nginx/sites-available/default /etc/nginx/sites-available/default.ba
 sudo tee /etc/nginx/sites-available/default > /dev/null << 'EOF'
 server {
     listen 80;
-    server_name _;
+    server_name roryk.ryanforanlennon.ie;
 
     location / {
         proxy_pass http://localhost:3000;
