@@ -1,0 +1,9 @@
+2025-08-05T09:01:48: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T09:01:48:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T09:01:48: (node:26388) [MONGODB DRIVER] Warning: useNewUrlParser is a deprecated option: useNewUrlParser has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+(Use `node --trace-warnings ...` to show where the warning was created)
+2025-08-05T09:01:48: (node:26388) [MONGODB DRIVER] Warning: useUnifiedTopology is a deprecated option: useUnifiedTopology has no effect since Node.js Driver version 4.0.0 and will be removed in the next major version
+2025-08-05T09:01:48: 🚀 RoryK Backend API running on port 3001
+2025-08-05T09:01:48: 📍 Health check: http://localhost:3001/health
+2025-08-05T09:01:48: 💳 Stripe integration: ✅ Connected
+2025-08-05T09:01:48: 🌐 CORS enabled for: http://localhost:3000

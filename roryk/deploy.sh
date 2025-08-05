@@ -50,14 +50,23 @@ check_prerequisites() {
         error "npm is not installed. Please install npm first."
     fi
     
-    # Check if Docker is installed
-    if ! command -v docker &> /dev/null; then
-        error "Docker is not installed. Please install Docker first."
+    # Check if PM2 is installed
+    if ! command -v pm2 &> /dev/null; then
+        log "Installing PM2..."
+        npm install -g pm2
     fi
     
-    # Check if Docker Compose is installed
-    if ! command -v docker-compose &> /dev/null; then
-        error "Docker Compose is not installed. Please install Docker Compose first."
+    # Check if MongoDB is installed
+    if ! command -v mongod &> /dev/null; then
+        warning "MongoDB is not installed. Running MongoDB setup script..."
+        chmod +x ./setup-mongodb.sh
+        ./setup-mongodb.sh
+    fi
+    
+    # Check if serve is installed (for frontend)
+    if ! command -v serve &> /dev/null; then
+        log "Installing serve..."
+        npm install -g serve
     fi
     
     success "All prerequisites are met"
@@ -72,7 +81,7 @@ backup_database() {
     # Create MongoDB backup
     BACKUP_FILE="$BACKUP_DIR/mongodb_backup_$(date +%Y%m%d_%H%M%S).gz"
     
-    if docker-compose exec -T mongodb mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip > "$BACKUP_FILE"; then
+    if mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip > "$BACKUP_FILE"; then
         success "Database backup created: $BACKUP_FILE"
     else
         warning "Database backup failed, but continuing deployment..."
@@ -115,15 +124,15 @@ build_application() {
 start_database() {
     log "Starting database..."
     
-    # Start MongoDB with Docker Compose
-    docker-compose up -d
+    # Start MongoDB with PM2
+    pm2 start ecosystem.config.js --only roryk-mongodb
     
     # Wait for database to be ready
     log "Waiting for database to be ready..."
     sleep 10
     
     # Check if database is accessible
-    if docker-compose exec -T mongodb mongo --eval "db.adminCommand('ismaster')" > /dev/null 2>&1; then
+    if mongo --eval "db.adminCommand('ismaster')" > /dev/null 2>&1; then
         success "Database is ready"
     else
         error "Database failed to start properly"
@@ -138,32 +147,27 @@ deploy_backend() {
     
     # Copy appropriate environment file
     if [ "$DEPLOY_ENV" = "production" ]; then
-        if [ -f ".env.production" ]; then
+        if [ -f ".env.linux-production" ]; then
+            cp .env.linux-production .env
+            log "Using Linux production environment configuration"
+        elif [ -f ".env.production" ]; then
             cp .env.production .env
-            log "Using production environment configuration"
+            log "Using general production environment configuration"
         else
             warning "Production environment file not found, using development configuration"
         fi
     fi
     
-    # Start backend in production mode
+    cd ..
+    
+    # Start backend with PM2
     if [ "$DEPLOY_ENV" = "production" ]; then
-        # Install PM2 if not already installed
-        if ! command -v pm2 &> /dev/null; then
-            log "Installing PM2..."
-            npm install -g pm2
-        fi
-        
-        # Start with PM2
-        pm2 start server.js --name "$APP_NAME-backend" --env production
-        pm2 save
-        pm2 startup
+        pm2 start ecosystem.config.js --only roryk-backend --env production
     else
-        log "Starting backend in development mode..."
-        npm run dev &
+        pm2 start ecosystem.config.js --only roryk-backend --env development
     fi
     
-    cd ..
+    pm2 save
     success "Backend deployed"
 }
 
@@ -172,14 +176,8 @@ deploy_frontend() {
     log "Deploying frontend..."
     
     if [ "$DEPLOY_ENV" = "production" ]; then
-        # Serve built files with a simple HTTP server
-        if ! command -v serve &> /dev/null; then
-            log "Installing serve..."
-            npm install -g serve
-        fi
-        
-        # Start frontend server
-        serve -s build -l 3000 &
+        # Start frontend server with PM2
+        pm2 start ecosystem.config.js --only roryk-frontend
         success "Frontend deployed on port 3000"
     else
         log "Starting frontend in development mode..."
@@ -259,19 +257,13 @@ rollback() {
     log "Rolling back deployment..."
     
     # Stop services
-    if [ "$DEPLOY_ENV" = "production" ]; then
-        pm2 stop "$APP_NAME-backend" || true
-        pkill -f "serve -s build" || true
-    else
-        pkill -f "npm start" || true
-        pkill -f "npm run dev" || true
-    fi
+    pm2 stop all || true
     
     # Restore database from latest backup
     LATEST_BACKUP=$(ls -t "$BACKUP_DIR"/mongodb_backup_*.gz 2>/dev/null | head -n1)
     if [ -n "$LATEST_BACKUP" ]; then
         log "Restoring database from: $LATEST_BACKUP"
-        docker-compose exec -T mongodb mongorestore --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip < "$LATEST_BACKUP"
+        mongorestore --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk" --archive --gzip < "$LATEST_BACKUP"
     fi
     
     success "Rollback completed"
@@ -281,15 +273,9 @@ rollback() {
 stop() {
     log "Stopping services..."
     
-    if [ "$DEPLOY_ENV" = "production" ]; then
-        pm2 stop "$APP_NAME-backend" || true
-        pkill -f "serve -s build" || true
-    else
-        pkill -f "npm start" || true
-        pkill -f "npm run dev" || true
-    fi
-    
-    docker-compose down
+    # Stop all PM2 processes
+    pm2 stop all || true
+    pm2 delete all || true
     
     success "Services stopped"
 }

@@ -5,8 +5,9 @@ A comprehensive vehicle checking application with Stripe payment integration, se
 ## 🚀 Quick Start
 
 ### Prerequisites
-- Node.js (v14 or higher)
-- Docker Desktop
+- Node.js (v16 or higher)
+- MongoDB (v7.0 or higher)
+- PM2 (Process Manager)
 - Git
 
 ### 1. Clone and Install
@@ -28,37 +29,87 @@ cp backend/.env.example backend/.env
 # Edit .env files with your Stripe keys and other settings
 ```
 
-### 3. Start Database
+### 3. Install PM2 and MongoDB
 ```bash
-# Windows
-start-database.bat
+# Install PM2 globally
+npm install -g pm2
 
+# Install MongoDB (automated setup)
 # Linux/Mac
-docker-compose up -d
+chmod +x setup-mongodb.sh
+./setup-mongodb.sh
+
+# Windows - Install MongoDB manually from:
+# https://www.mongodb.com/try/download/community
 ```
 
 ### 4. Start Application
 ```bash
-# Terminal 1: Backend
-cd backend
-npm start
+# Windows
+pm2-start.bat production
 
-# Terminal 2: Frontend
-npm start
+# Linux/Mac
+chmod +x pm2-start.sh
+./pm2-start.sh production
+
+# Or manually with PM2
+pm2 start ecosystem.config.js --env production
 ```
 
 ## 🚀 Production Deployment
 
-For production deployment, see the comprehensive [Deployment Guide](./DEPLOYMENT_GUIDE.md).
+For production deployment, see:
+- **Free Hosting**: [Free Deployment Guide](./FREE_DEPLOYMENT_GUIDE.md) 🆓
+- **Linux Production**: [Quick Start Guide](./LINUX_QUICK_START.md) | [Complete Guide](./LINUX_PRODUCTION_GUIDE.md)
+- **General PM2**: [PM2 Deployment Guide](./PM2_DEPLOYMENT_GUIDE.md)
 
 ### Quick Production Setup
-```bash
-# Make deployment script executable
-chmod +x deploy.sh
 
-# Deploy to production
+#### Linux Production (Recommended)
+```bash
+# Make scripts executable
+chmod +x setup-mongodb.sh pm2-start.sh pm2-stop.sh deploy.sh
+
+# Automated production deployment
 ./deploy.sh production deploy
+
+# Or manual step-by-step
+./setup-mongodb.sh          # Install and configure MongoDB
+npm install -g pm2          # Install PM2 globally
+npm install && cd backend && npm install && cd ..  # Install dependencies
+npm run build               # Build frontend
+./pm2-start.sh production   # Start all services
 ```
+
+#### Windows Development
+```batch
+pm2-start.bat production
+```
+
+### Free Website Deployment 🆓
+```bash
+# Deploy to Oracle Cloud Always Free (recommended)
+# 1. Create free Oracle Cloud account
+# 2. Launch Ubuntu VM instance
+# 3. Run one command:
+curl -fsSL https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh | bash
+```
+
+**Free hosting options:**
+- **Oracle Cloud**: Forever free (4 CPU, 24GB RAM)
+- **Google Cloud**: Forever free (1 CPU, 1GB RAM)
+- **Render.com**: 750 hours/month free
+- **Railway**: Free tier available
+
+See [Free Deployment Guide](./FREE_DEPLOYMENT_GUIDE.md) for complete instructions.
+
+### Linux Production Requirements
+- **Ubuntu 20.04+** or **CentOS 8+**
+- **Node.js 16+** and **npm 8+**
+- **MongoDB 7.0+** (auto-installed by setup script)
+- **PM2** (auto-installed by deployment script)
+- **Nginx** (for reverse proxy - optional but recommended)
+- **SSL Certificate** (Let's Encrypt recommended)
 
 ## 🔧 Configuration
 
@@ -72,7 +123,7 @@ chmod +x deploy.sh
    ```
 
 ### Database Configuration
-The application uses a self-hosted MongoDB instance via Docker. See [`DATABASE_SETUP.md`](./DATABASE_SETUP.md) for detailed setup instructions.
+The application uses a locally installed MongoDB instance managed by PM2. The setup script will automatically install and configure MongoDB with proper authentication.
 
 ## 📁 Project Structure
 
@@ -92,7 +143,10 @@ roryk/
 │   ├── middleware/               # Express middleware
 │   └── utils/                    # Backend utilities
 ├── mongo-init/                   # Database initialization scripts
-└── docker-compose.yml            # Docker configuration
+├── ecosystem.config.js           # PM2 configuration
+├── setup-mongodb.sh              # MongoDB setup script
+├── pm2-start.sh/.bat             # PM2 startup scripts
+└── pm2-stop.sh/.bat              # PM2 stop scripts
 ```
 
 ## 🔐 Authentication & Authorization
@@ -131,17 +185,16 @@ After database initialization, a default admin account is created:
 
 ## 🗄️ Database
 
-### Self-Hosted MongoDB
-- Dockerized MongoDB instance
-- Mongo Express web interface for administration
+### Local MongoDB Installation
+- Native MongoDB installation managed by PM2
 - Automatic database initialization with proper indexing
 - User authentication and role-based access control
+- Configuration file-based setup
 
 ### Database Access
 - **MongoDB**: `mongodb://localhost:27017/roryk`
-- **Web Interface**: http://localhost:8081
-  - Username: `admin`
-  - Password: `roryk-web-admin`
+- **Connection String**: `mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk`
+- **Admin Access**: `mongodb://admin:roryk-admin-password-2024@localhost:27017/roryk?authSource=admin`
 
 ### Email Configuration
 The application includes a complete email service for password resets:
@@ -181,12 +234,25 @@ The application includes a complete email service for password resets:
 ## 🚀 Deployment
 
 ### Development
-1. Start database: `docker-compose up -d`
-2. Start backend: `cd backend && npm start`
-3. Start frontend: `npm start`
+```bash
+# Windows
+pm2-start.bat development
+
+# Linux/Mac
+./pm2-start.sh development
+```
+
+### Free Website Deployment 🆓
+```bash
+# One-command deployment to free cloud hosting
+curl -fsSL https://raw.githubusercontent.com/yourusername/roryk/main/free-cloud-deploy.sh | bash
+```
 
 ### Production
-For detailed production deployment instructions, see [DEPLOYMENT_GUIDE.md](./DEPLOYMENT_GUIDE.md).
+For detailed production deployment instructions, see:
+- **Free Hosting**: [Free Deployment Guide](./FREE_DEPLOYMENT_GUIDE.md) 🆓
+- **Linux**: [Linux Production Guide](./LINUX_PRODUCTION_GUIDE.md)
+- **General**: [PM2 Deployment Guide](./PM2_DEPLOYMENT_GUIDE.md)
 
 **Quick Production Deployment:**
 ```bash
@@ -203,13 +269,14 @@ For detailed production deployment instructions, see [DEPLOYMENT_GUIDE.md](./DEP
 ```
 
 **Production Features:**
-- Automated deployment script
+- Automated deployment script with PM2
 - SSL/HTTPS configuration
-- Process management with PM2
+- Native process management with PM2
 - Database backups and recovery
 - Email service integration
 - Security hardening
 - Performance optimization
+- No Docker dependencies
 
 ## 🔍 Troubleshooting
 
@@ -234,10 +301,10 @@ For detailed production deployment instructions, see [DEPLOYMENT_GUIDE.md](./DEP
 #### Database Connection Issues
 - **Issue**: Cannot connect to MongoDB
 - **Solutions**:
-  1. Ensure Docker is running: `docker --version`
-  2. Check containers: `docker-compose ps`
-  3. View logs: `docker-compose logs mongodb`
-  4. Restart containers: `docker-compose restart`
+  1. Check MongoDB status: `pm2 status roryk-mongodb`
+  2. View MongoDB logs: `pm2 logs roryk-mongodb`
+  3. Restart MongoDB: `pm2 restart roryk-mongodb`
+  4. Check MongoDB configuration: `./mongodb.conf`
 
 #### Payment Processing Failures
 - **Issue**: Payments failing or timing out
@@ -257,20 +324,22 @@ For detailed production deployment instructions, see [DEPLOYMENT_GUIDE.md](./DEP
 
 ### Logs and Debugging
 - **Frontend**: Browser Developer Tools Console
-- **Backend**: Terminal output where `npm start` was run
-- **Database**: `docker-compose logs mongodb`
-- **Web Interface**: `docker-compose logs mongo-express`
+- **Backend**: `pm2 logs roryk-backend`
+- **Database**: `pm2 logs roryk-mongodb`
+- **All Services**: `pm2 logs`
 
 ## 📊 Monitoring
 
 ### Health Checks
 - Frontend: http://localhost:3000
-- Backend: http://localhost:5000/api/health (if implemented)
-- Database: http://localhost:8081 (Mongo Express)
+- Backend: http://localhost:3001/api/health (if implemented)
+- Database: `mongo --eval "db.adminCommand('ismaster')"`
+- PM2 Status: `pm2 status`
 
 ### Performance Monitoring
-- Monitor database query performance via Mongo Express
+- Monitor all processes: `pm2 monit`
 - Use browser DevTools for frontend performance
+- Check MongoDB performance with native tools
 - Implement logging for payment processing times
 
 ## 🔒 Security
@@ -312,31 +381,34 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 For support and questions:
 1. Check the troubleshooting section above
-2. Review the database setup guide: [`DATABASE_SETUP.md`](./DATABASE_SETUP.md)
-3. Check application logs for detailed error messages
-4. Ensure all environment variables are properly configured
+2. **Linux Production**: See [Linux Production Guide](./LINUX_PRODUCTION_GUIDE.md)
+3. **Quick Start**: See [Linux Quick Start](./LINUX_QUICK_START.md)
+4. Check application logs: `pm2 logs`
+5. Ensure all environment variables are properly configured
 
 ## 🔄 Updates and Maintenance
 
 ### Regular Maintenance Tasks
 - Update dependencies: `npm audit fix`
-- Database backups: `mongodump --uri="mongodb://localhost:27017/roryk"`
-- Monitor disk space for Docker volumes
+- Database backups: `mongodump --uri="mongodb://roryk_app:roryk-app-password-2024@localhost:27017/roryk?authSource=roryk"`
+- Monitor disk space for MongoDB data directory
 - Review and rotate JWT secrets periodically
 - Update Stripe webhook endpoints if needed
 - Clean up expired password reset tokens
 - Monitor email service delivery rates
 - Review security logs and access patterns
+- Monitor PM2 processes: `pm2 status`
 
 ### Automated Maintenance
-- Database backups (daily at 2 AM)
+- Database backups (daily at 2 AM via cron)
 - SSL certificate renewal (automatic with certbot)
 - Security updates (weekly)
-- Log rotation and cleanup
-- Performance monitoring and alerts
+- PM2 log rotation and cleanup
+- Performance monitoring with PM2 monit
 
 ### Version History
 - **v1.0.0**: Initial release with localStorage
 - **v2.0.0**: MongoDB integration and improved payment system
 - **v2.1.0**: Self-hosted database solution with Docker
 - **v2.2.0**: Complete password management system and production deployment
+- **v3.0.0**: PM2 process management replacing Docker dependencies

@@ -1,0 +1,6 @@
+2025-08-05T09:01:48: ⚠️  Email service not configured - SMTP credentials missing
+2025-08-05T09:01:48:    Add SMTP_HOST, SMTP_USER, SMTP_PASS to environment variables
+2025-08-05T09:01:48: 🚀 RoryK Backend API running on port 3001
+2025-08-05T09:01:48: 📍 Health check: http://localhost:3001/health
+2025-08-05T09:01:48: 💳 Stripe integration: ✅ Connected
+2025-08-05T09:01:48: 🌐 CORS enabled for: http://localhost:3000
